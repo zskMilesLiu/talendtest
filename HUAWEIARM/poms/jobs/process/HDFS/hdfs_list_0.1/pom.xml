@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.example.huaweiarm</groupId>
+    <groupId>huaweiarm</groupId>
     <artifactId>code.Master</artifactId>
     <version>7.2.1</version>
     <relativePath>../../../../</relativePath>
@@ -25,8 +25,8 @@
     <talend.project.name>HUAWEIARM</talend.project.name>
     <talend.product.version>7.2.1.20190620_1446</talend.product.version>
     <talend.job.finalName>hdfs_list_0_1</talend.job.finalName>
-    <talend.pigudf.groupid>org.example.huaweiarm.pigudf</talend.pigudf.groupid>
-    <talend.routine.groupid>org.example.huaweiarm.code</talend.routine.groupid>
+    <talend.pigudf.groupid>huaweiarm.pigudf</talend.pigudf.groupid>
+    <talend.routine.groupid>huaweiarm.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
     <talend.job.jvmargs>-Xms256M -Xmx1024M -Djava.security.krb5.conf=C:/tmp/krb5.conf -Dfile.encoding=UTF-8 </talend.job.jvmargs>
     <talend.job.stat>true</talend.job.stat>
@@ -238,7 +238,7 @@
       <version>6.0.0</version>
     </dependency>
     <dependency>
-      <groupId>org.example.huaweiarm.code</groupId>
+      <groupId>huaweiarm.code</groupId>
       <artifactId>routines</artifactId>
       <version>7.2.1</version>
     </dependency>
