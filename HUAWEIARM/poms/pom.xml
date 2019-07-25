@@ -14,6 +14,7 @@
     <module>code/routines</module>
     <module>jobs/process/HDFS/hdfs_output_0.1</module>
     <module>jobs/process/HIVE/hive_connect_0.1</module>
+    <module>jobs/process/HBase/hbase_connection_0.1</module>
   </modules>
   <properties>
     <signer.version>7.2.1</signer.version>
