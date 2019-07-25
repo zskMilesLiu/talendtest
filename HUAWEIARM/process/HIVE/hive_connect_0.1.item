@@ -146,22 +146,22 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;developuser&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE="/>
-    <elementParameter field="TEXT" name="HIVE_ADDITIONAL_JDBC" value="&quot;;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2;sasl.qop=auth-conf;&quot;"/>
+    <elementParameter field="TEXT" name="HIVE_ADDITIONAL_JDBC" value="&quot;;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2;sasl.qop=auth-conf;auth=KERBEROS;principal=hive/hadoop.hadoop.com@HADOOP.COM;user.principal=developuser;user.keytab=C:/tmp/user.keytab;&quot;"/>
     <elementParameter field="CHECK" name="CONFIGURATIONS_FROM_CLASSPATH" value="false"/>
-    <elementParameter field="CHECK" name="USE_KRB" value="true"/>
-    <elementParameter field="TEXT" name="HIVE_PRINCIPAL" value="&quot;hive/hadoop.hadoop.com@HADOOP.COM&quot;"/>
+    <elementParameter field="CHECK" name="USE_KRB" value="false"/>
+    <elementParameter field="TEXT" name="HIVE_PRINCIPAL" show="false" value="&quot;hive/hadoop.hadoop.com@HADOOP.COM&quot;"/>
     <elementParameter field="TEXT" name="HIVESERVER2_LOCAL_PRINCIPAL" show="false" value="&quot;/tmp/hiveServer2User.keytab&quot;"/>
     <elementParameter field="FILE" name="HIVESERVER2_LOCAL_KEYTAB" show="false" value="&quot;/tmp/hiveServer2.keytab&quot;"/>
-    <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" value="&quot;hdfs/hadoop.hadoop.com@HADOOP.COM&quot;"/>
-    <elementParameter field="TEXT" name="JOBTRACKER_PRINCIPAL" value="&quot;jt/_HOST@HADOOP.COM&quot;"/>
+    <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" show="false" value="&quot;hdfs/hadoop.hadoop.com@HADOOP.COM&quot;"/>
+    <elementParameter field="TEXT" name="JOBTRACKER_PRINCIPAL" show="false" value="&quot;jt/_HOST@HADOOP.COM&quot;"/>
     <elementParameter field="TEXT" name="RESOURCEMANAGER_PRINCIPAL" show="false" value="&quot;yarn/_HOST@EXAMPLE.COM&quot;"/>
     <elementParameter field="TEXT" name="METASTORE_JDBC_URL" show="false" value="&quot;jdbc:mysql://&quot;"/>
     <elementParameter field="TEXT" name="METASTORE_CLASSNAME" show="false" value="&quot;com.mysql.jdbc.Driver&quot;"/>
     <elementParameter field="TEXT" name="METASTORE_USERNAME" show="false" value="&quot;hive&quot;"/>
     <elementParameter field="PASSWORD" name="METASTORE_PASSWORD" show="false" value="SsYyuEyMCHg="/>
-    <elementParameter field="CHECK" name="USE_KEYTAB" value="true"/>
-    <elementParameter field="TEXT" name="PRINCIPAL" value="&quot;developuser&quot;"/>
-    <elementParameter field="FILE" name="KEYTAB_PATH" value="context.keytab"/>
+    <elementParameter field="CHECK" name="USE_KEYTAB" show="false" value="true"/>
+    <elementParameter field="TEXT" name="PRINCIPAL" show="false" value="&quot;developuser&quot;"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" show="false" value="context.keytab"/>
     <elementParameter field="CHECK" name="USE_MAPRTICKET" value="false"/>
     <elementParameter field="TEXT" name="MAPRTICKET_USERNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" show="false" value="0RMsyjmybrE="/>
@@ -252,13 +252,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6c733c69-ee6f-4604-982e-b419ef55ea13"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wrA3BDkZbqQwUly7/aB3r3JfJOf68F1mV+R6OuQmW/s1DKxk76fyHGBQ+xaDgxF+xk2BEGwR9PGc
-JGhJcKpFgw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4d7e7c28-e577-4d6a-9683-4b1f3e078116"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wjhwhMqrqWFYPzFF14zS6Fo/jsMcjrEeifS3yNLnv163YGzcW4uTYDuxHkOvP/e90xmrJqnLHN9G
-Yg7tnDXiag==</DigestValue></Reference></SignedInfo><SignatureValue>DPL9cNbZZMmSgPJl+ki/s2N30DkJVWAH57/1S3XQSkQLcceTnOjnr3kzycaEYCr+NQjXeGG8cVZ7
-BBjYF6dL+PRS2VWWrYJaOnxDKeCX+NIyB7kpMd4YNadY+3NsVNw5F13hE3Im9ngeGUy503OTlW06
-YCFmXM3KAAyNyuxfhvv5D0rEIanEeJH2xXRfxpVe8Q2zdkFv3Jp/HRBg+0GANfYF6wK0424Pc5TU
-J38s3jheiK6ml6U5/JLRJzqOu8aZISugkwPb+wti1iKbAjSXPFC7KdFFybHE8uo1fGwcgZ/W9Dmq
-6Zen52mm4yjT/WITHgFKzodS4noZpXPjMv8DjA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_25187bd7-4197-42be-b0ea-7cfe1882a708"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>QAUZsmEBuZjEFo5Ak2+1OqVJUsFVpr4wl/yJMGLMSxoe0F7co5+ggqT9xYsDSxrZbSdk3R8VqwDO
+0dGn0RKnLg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0df1b060-c57e-47a2-be82-96bcef88d098"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0NusM73+H7aE3fm8uJUMl5dVVrsXO2BoCHj1p3+MhbB0jaJlAF+CIyH21XPlkMapGGg/MHgPpCVn
+dA51bkzxxw==</DigestValue></Reference></SignedInfo><SignatureValue>Ald5CmKFEwo44aEJngLg6YJKxlQSlZVchgvnCGsk95uzPnxIPicIRBQAXyErAkVm9Iaugo9txgm1
+wYS6IymBavHN57ru6mlHNa+Hvuugwf6yODeXVTqavfguRp+uegFWI/psTT0buhwk89FgtPTC9jp2
+She1p49JDtNSCuF5PEf0qhkWB2XRR+q6/SB1CF110Xb+jIefaxKd0AT8IKdoelUay74QWJtseUEp
+5K8m8axDKYPRlz2dXXm6qMunClD5cEz0pBj+mJdSJUY2man0w67DQHY3m3Ajm/hyYav/t0n7WZHH
+8Vi8Bgo2UkzNq49nSDIKAn0QhlBj36tWVh4M/w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -280,4 +280,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4d7e7c28-e577-4d6a-9683-4b1f3e078116" Target="#_6c733c69-ee6f-4604-982e-b419ef55ea13"><Timestamp>2019-07-25 16:24:05</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0df1b060-c57e-47a2-be82-96bcef88d098" Target="#_25187bd7-4197-42be-b0ea-7cfe1882a708"><Timestamp>2019-07-25 16:27:11</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
