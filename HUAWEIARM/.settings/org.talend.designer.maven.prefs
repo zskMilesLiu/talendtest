@@ -1,3 +1,5 @@
+APPEND_FOLDER_TO_GROUPID=true
 PROJECT_GROUPID=org.example.huaweiarm
 PROJECT_VERSION=7.2.1
+SKIP_BASE_GROUPID=true
 eclipse.preferences.version=1

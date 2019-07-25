@@ -8,7 +8,7 @@
     <version>7.2.1</version>
     <relativePath>../../../../</relativePath>
   </parent>
-  <groupId>org.example.huaweiarm.job</groupId>
+  <groupId>HDFS</groupId>
   <artifactId>hdfs_list</artifactId>
   <version>0.1.0</version>
   <name>HUAWEIARM hdfs_list-0.1.0 (0.1,Job Designs)</name>
