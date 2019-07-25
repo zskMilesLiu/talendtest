@@ -11,6 +11,7 @@
   <modules>
     <module>code/routines</module>
     <module>jobs/process/simple_test_0.1</module>
+    <module>jobs/process/HDFS/hdfs_list_0.1</module>
   </modules>
   <properties>
     <signer.version>7.2.1</signer.version>
