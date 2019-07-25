@@ -9,9 +9,9 @@
     <relativePath>../../../../</relativePath>
   </parent>
   <groupId>HBase</groupId>
-  <artifactId>hbase_connection</artifactId>
+  <artifactId>hbase_connection_bak</artifactId>
   <version>0.1.0</version>
-  <name>HUAWEIARM hbase_connection-0.1.0 (0.1,Job Designs)</name>
+  <name>HUAWEIARM hbase_connection_bak-0.1.0 (0.1,Job Designs)</name>
   <properties>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
@@ -19,12 +19,12 @@
     <current.int-resources.dir>${basedir}/src/main/resources</current.int-resources.dir>
     <talend.job.version>0.1</talend.job.version>
     <talend.project.name.lowercase>huaweiarm</talend.project.name.lowercase>
-    <talend.job.path>huaweiarm/hbase_connection_0_1</talend.job.path>
+    <talend.job.path>huaweiarm/hbase_connection_bak_0_1</talend.job.path>
     <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>HUAWEIARM</talend.project.name>
     <talend.product.version>7.2.1.20190620_1446</talend.product.version>
-    <talend.job.finalName>hbase_connection_0_1</talend.job.finalName>
+    <talend.job.finalName>hbase_connection_bak_0_1</talend.job.finalName>
     <talend.pigudf.groupid>huaweiarm.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>huaweiarm.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
@@ -33,8 +33,8 @@
     <talend.job.context>DEV</talend.job.context>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
-    <talend.job.name>hbase_connection</talend.job.name>
-    <talend.job.id>_HkDH0K8FEemp86hi8w0AfQ</talend.job.id>
+    <talend.job.name>hbase_connection_bak</talend.job.name>
+    <talend.job.id>_RNEo0K8LEemp86hi8w0AfQ</talend.job.id>
     <talend.project.id>0</talend.project.id>
     <talend.job.folder>hbase/</talend.job.folder>
     <talend.job.framework></talend.job.framework>
