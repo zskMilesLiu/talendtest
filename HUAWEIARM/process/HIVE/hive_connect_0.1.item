@@ -143,27 +143,27 @@
     <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" value="libfb303-0.9.3.jar;spring-aop-4.3.20.RELEASE.jar;commons-net-3.6.jar;hive-service-rpc-3.1.0.jar;datanucleus-api-jdo-4.2.4.jar;cxf-rt-transports-http-3.1.16.jar;hadoop-auth-3.1.1.jar;metrics-core-3.1.0.jar;jsch-0.1.54.jar;jackson-databind-2.9.8.jar;jersey-core-1.19.jar;commons-configuration-1.6.jar;slf4j-log4j12-1.7.5.jar;javax.servlet-api-3.1.0.jar;FMS-v1r2c60-20160429.jar;ant-1.10.3.jar;javax.annotation-api-1.2.jar;libthrift-0.9.3.jar;transaction-api-1.1.jar;spring-core-4.3.20.RELEASE.jar;crypter-0.0.6.jar;metrics-json-3.1.0.jar;xmlschema-core-2.2.3.jar;log4j-api-2.10.0.jar;commons-collections-3.2.2.jar;hadoop-mapreduce-client-core-3.1.1.jar;orc-core-1.5.1.jar;hive-storage-api-2.7.0.jar;common-0.0.1.jar;hive-standalone-metastore-3.1.0.jar;zookeeper-fi-3.5.1.jar;hive-service-3.1.0.jar;jetty-io-9.3.20.v20170531.jar;om-monitor-plugin-0.0.1.jar;javax.jdo-3.2.0-m3.jar;woodstox-core-5.0.3.jar;commons-lang3-3.2.jar;netty-all-4.1.17.Final.jar;hive-classification-3.1.0.jar;HA-v1r2c60-20160429.jar;pms-v1r2c60-20160429.jar;bonecp-0.8.0.RELEASE.jar;htrace-core4-4.1.0-incubating.jar;spring-beans-4.3.20.RELEASE.jar;HikariCP-2.6.1.jar;log4j-1.2-api-2.10.0.jar;commons-collections4-4.2.jar;sqlline-1.3.0.jar;jackson-mapper-asl-1.9.13.jar;cxf-core-3.1.16.jar;commons-lang-2.6.jar;jsr311-api-1.1.1.jar;slf4j-api-1.7.10.jar;hive-metastore-3.1.0.jar;commons-logging-1.1.3.jar;metrics-jvm-3.1.0.jar;commons-pool-1.5.4.jar;xpp3_min-1.1.4c.jar;hive-serde-3.1.0.jar;gsjdbc4-V100R003C10SPC117.jar;log4j-core-2.10.0.jar;jettison-1.1.jar;hive-shims-0.23-3.1.0.jar;spring-expression-4.3.20.RELEASE.jar;mockito-all-1.10.19.jar;httpclient-4.5.2.jar;curator-framework-2.12.0.jar;jetty-util-ajax-9.3.24.v20180605.jar;xstream-1.4.10.jar;commons-codec-1.7.jar;jline-2.12.jar;jackson-core-asl-1.9.13.jar;curator-client-2.12.0.jar;jackson-annotations-2.9.8.jar;spring-context-4.3.20.RELEASE.jar;derby-10.14.1.0.jar;jetty-server-9.3.20.v20170531.jar;log4j-slf4j-impl-2.10.0.jar;protobuf-java-2.5.0.jar;guava-19.0.jar;xercesImpl-2.9.1.jar;zookeeper-3.5.1.jar;woodstox-core-asl-4.4.1.jar;hive-jdbc-hw-3.1.0.jar;hadoop-hdfs-3.1.1.jar;aircompressor-0.10.jar;commons-dbcp-1.4.jar;xmlpull-1.1.3.1.jar;commons-cli-1.2.jar;om-controller-api-0.0.1.jar;cxf-rt-frontend-jaxrs-3.1.16.jar;hive-common-3.1.0.jar;orc-shims-1.5.1.jar;antlr-runtime-3.5.2.jar;commons-io-2.4.jar;javax.ws.rs-api-2.0.1.jar;hadoop-common-3.1.1.jar;cglib-3.2.10.jar;hive-shims-common-3.1.0.jar;commons-configuration2-2.1.1.jar;javolution-5.5.1.jar;jetty-util-9.3.24.v20180605.jar;jackson-core-2.9.8.jar;log4j-1.2.17.jar;jetty-http-9.3.20.v20170531.jar;stax2-api-3.1.4.jar;jackson-jaxrs-1.9.13.jar;datanucleus-rdbms-fi-4.1.19.jar;dropwizard-metrics-hadoop-metrics2-reporter-0.1.2.jar;datanucleus-core-4.1.17.jar;httpcore-4.4.4.jar;jersey-server-1.19.jar"/>
     <elementParameter field="CHECK" name="USE_YARN" value="false"/>
     <elementParameter field="CHECK" name="CROSS_PLATFORM_SUBMISSION" show="false" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="CONNECTION_MODE" value="STANDALONE"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_MODE" value="EMBEDDED"/>
     <elementParameter field="CLOSED_LIST" name="HIVE_SERVER" value="HIVE2"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;10.100.1.2:24002,10.100.1.3:24002,10.100.1.4&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;10.100.1.3&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="Hive"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;24002&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;developuser&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE="/>
-    <elementParameter field="TEXT" name="HIVE_ADDITIONAL_JDBC" value="&quot;;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2;sasl.qop=auth-conf;&quot;"/>
-    <elementParameter field="CHECK" name="CONFIGURATIONS_FROM_CLASSPATH" value="false"/>
+    <elementParameter field="TEXT" name="HIVE_ADDITIONAL_JDBC" show="false" value="&quot;;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2;sasl.qop=auth-conf;&quot;"/>
+    <elementParameter field="CHECK" name="CONFIGURATIONS_FROM_CLASSPATH" show="false" value="false"/>
     <elementParameter field="CHECK" name="USE_KRB" value="true"/>
     <elementParameter field="TEXT" name="HIVE_PRINCIPAL" value="&quot;hive/hadoop.hadoop.com@HADOOP.COM&quot;"/>
-    <elementParameter field="TEXT" name="HIVESERVER2_LOCAL_PRINCIPAL" show="false" value="&quot;/tmp/hiveServer2User.keytab&quot;"/>
-    <elementParameter field="FILE" name="HIVESERVER2_LOCAL_KEYTAB" show="false" value="&quot;/tmp/hiveServer2.keytab&quot;"/>
+    <elementParameter field="TEXT" name="HIVESERVER2_LOCAL_PRINCIPAL" value="&quot;/tmp/hiveServer2User.keytab&quot;"/>
+    <elementParameter field="FILE" name="HIVESERVER2_LOCAL_KEYTAB" value="&quot;/tmp/hiveServer2.keytab&quot;"/>
     <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" value="&quot;hdfs/hadoop.hadoop.com@HADOOP.COM&quot;"/>
     <elementParameter field="TEXT" name="JOBTRACKER_PRINCIPAL" value="&quot;jt/_HOST@HADOOP.COM&quot;"/>
     <elementParameter field="TEXT" name="RESOURCEMANAGER_PRINCIPAL" show="false" value="&quot;yarn/_HOST@EXAMPLE.COM&quot;"/>
-    <elementParameter field="TEXT" name="METASTORE_JDBC_URL" show="false" value="&quot;jdbc:mysql://&quot;"/>
-    <elementParameter field="TEXT" name="METASTORE_CLASSNAME" show="false" value="&quot;com.mysql.jdbc.Driver&quot;"/>
-    <elementParameter field="TEXT" name="METASTORE_USERNAME" show="false" value="&quot;hive&quot;"/>
-    <elementParameter field="PASSWORD" name="METASTORE_PASSWORD" show="false" value="SsYyuEyMCHg="/>
+    <elementParameter field="TEXT" name="METASTORE_JDBC_URL" value="&quot;jdbc:mysql://&quot;"/>
+    <elementParameter field="TEXT" name="METASTORE_CLASSNAME" value="&quot;com.mysql.jdbc.Driver&quot;"/>
+    <elementParameter field="TEXT" name="METASTORE_USERNAME" value="&quot;hive&quot;"/>
+    <elementParameter field="PASSWORD" name="METASTORE_PASSWORD" value="SsYyuEyMCHg="/>
     <elementParameter field="CHECK" name="USE_KEYTAB" value="true"/>
     <elementParameter field="TEXT" name="PRINCIPAL" value="&quot;developuser&quot;"/>
     <elementParameter field="FILE" name="KEYTAB_PATH" value="context.keytab"/>
@@ -175,15 +175,15 @@
     <elementParameter field="CHECK" name="USE_SSL" value="false"/>
     <elementParameter field="FILE" name="SSL_TRUST_STORE" show="false" value="&quot;/home/usr1/ssl/trust_store.jks&quot;"/>
     <elementParameter field="PASSWORD" name="SSL_TRUST_STORE_PASSWORD" show="false" value="crKjNM+/KPoSQfCGt+RqAg=="/>
-    <elementParameter field="CHECK" name="SET_MAPRED_JT" value="false"/>
-    <elementParameter field="TEXT" name="MAPRED_JT" show="false" value="&quot;localhost:50300&quot;"/>
-    <elementParameter field="CHECK" name="SET_RESOURCE_MANAGER" show="false" value="false"/>
+    <elementParameter field="CHECK" name="SET_MAPRED_JT" value="true"/>
+    <elementParameter field="TEXT" name="MAPRED_JT" value="&quot;localhost:50300&quot;"/>
+    <elementParameter field="CHECK" name="SET_RESOURCE_MANAGER" show="false" value="true"/>
     <elementParameter field="TEXT" name="RESOURCE_MANAGER" show="false" value="&quot;localhost:8032&quot;"/>
-    <elementParameter field="CHECK" name="SET_FS_DEFAULT_NAME" value="false"/>
-    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" show="false" value="&quot;hdfs://localhost:8020&quot;"/>
-    <elementParameter field="CHECK" name="SET_SCHEDULER_ADDRESS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="SET_FS_DEFAULT_NAME" value="true"/>
+    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" value="&quot;hdfs://localhost:8020&quot;"/>
+    <elementParameter field="CHECK" name="SET_SCHEDULER_ADDRESS" show="false" value="true"/>
     <elementParameter field="TEXT" name="RESOURCEMANAGER_SCHEDULER_ADDRESS" show="false" value="&quot;localhost:8030&quot;"/>
-    <elementParameter field="CHECK" name="SET_JOBHISTORY_ADDRESS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="SET_JOBHISTORY_ADDRESS" show="false" value="true"/>
     <elementParameter field="TEXT" name="JOBHISTORY_ADDRESS" show="false" value="&quot;localhost:10020&quot;"/>
     <elementParameter field="CHECK" name="SET_HADOOP_USER" show="false" value="false"/>
     <elementParameter field="TEXT" name="HADOOP_USER" show="false" value="&quot;hadoop&quot;"/>
@@ -207,8 +207,8 @@
     <elementParameter field="TEXT" name="PATH_TO_GOOGLE_CREDENTIALS" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
-    <elementParameter field="CLOSED_LIST" name="EXECUTION_ENGINE" show="false" value="mr"/>
-    <elementParameter field="CHECK" name="STORE_BY_HBASE" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="EXECUTION_ENGINE" value="mr"/>
+    <elementParameter field="CHECK" name="STORE_BY_HBASE" show="false" value="false"/>
     <elementParameter field="TEXT" name="ZOOKEEPER_QUORUM" show="false" value="&quot;localhost&quot;"/>
     <elementParameter field="TEXT" name="ZOOKEEPER_CLIENT_PORT" show="false" value="&quot;2181&quot;"/>
     <elementParameter field="CHECK" name="SET_ZNODE_PARENT" show="false" value="false"/>
@@ -258,13 +258,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a2627ff4-5d68-4648-92c6-0da4716f48dc"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>XBvvd9KaNHCnbdjI/em5Ll0kJJviuFV+Dy40B3o5lbkDtRvNL6AFXQp8+te6JFWeLEZ46Ggn2jTV
-ESd/hT/sXw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_02c6ad84-e91c-4f6a-849b-412e133e1c3b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/Shjs47WiEtCUTtGg0VetZ90TI4RVaiUdOV/OTUETPm7v5YK8QjIyNBZINh3GLf1KZe0u8SS2lC5
-tkp/Pn8L+Q==</DigestValue></Reference></SignedInfo><SignatureValue>KjftplHgZyO1itxoj22k35idxvFtRO8PLHcWv4FfaJcP34ZwP7YkAWlAgL54ndoMMK1YjqRGYG56
-yn6/Wnp2eLDWmxyktyiLqh+3ugBPksDTbCeVC/nhPCeyorr02zdJl23gFeidZW/x1RXL/VGB3A1g
-DtdJeLlOFgcs7EWMqAJrd4+DqzsCwk/LQnm6uMJNGpxz/y3rAK2FPufG5p2G0fpoiTLl2gHAYtbv
-OFcP18LIK9qc2wH2jAxVPc1TIgjHIRxw1aCwtfiMvewyIdAuflEZgRLmlLwava43x3Q5zW3/8hDq
-ySCFce6D1kcLAbgwlpqr0lLH+XIrkzp/IZjoLA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ad87cfe0-e7b6-468d-a684-ae635fbf272c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>jkgwqDitmA5CP6z9Nyh1x9EuMGa32XEVYDDhINcYqxPMm4gT1ZSjhLlxhhH7tRoqzswxFp5l7tZ+
+33aZCTeVSw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e663451f-575e-4d51-b44e-cabe7014caf7"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hZfQRA9N9n+qFqwWD85hDKYkkZXUWg2gKxuYLuAvYgesuMld6AD0sC8W0YrQDsK9034PzSCH2X5j
+5bBISWTYdg==</DigestValue></Reference></SignedInfo><SignatureValue>BQhT3mZlMvkyDq8Q2EK4D71K3e/exBjBUD2w5zjwfkTFF0Tjje6XBn/sO9C3hHZcbAJGfUYLprWB
+0lWuMLwSCpuyCJsR7Hqgww2esLMkjoTKDtV+2OZjBSdGtHLUyk0hLnntOoq9PAA+Ffk5fM4s76Ne
+qYGe4T82bBme3LzI4xjDEBL8dr4QaMZ8my3eEbL+oqz+9AmFCxayhj0dlqi/NPqTyjknK4bBDB3k
+EirRRTXRPpx08zBAaBLaLwSZaGdi3YyfOX3biIw3mkXDBUinWOWRMtObDohmQ8MOp5pj1hjufksO
+TKrAu9PplHdo/DLwCV78hEr8LKmpK5dK/U43Sg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -286,4 +286,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_02c6ad84-e91c-4f6a-849b-412e133e1c3b" Target="#_a2627ff4-5d68-4648-92c6-0da4716f48dc"><Timestamp>2019-07-26 02:13:25</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e663451f-575e-4d51-b44e-cabe7014caf7" Target="#_ad87cfe0-e7b6-468d-a684-ae635fbf272c"><Timestamp>2019-07-26 02:14:21</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
