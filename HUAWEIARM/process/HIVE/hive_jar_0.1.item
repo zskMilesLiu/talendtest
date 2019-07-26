@@ -13,7 +13,7 @@
     <elementParameter field="CHECK" name="LOG4J_RUN_ACTIVATE" show="false" value="true"/>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Trace"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="96"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
@@ -120,21 +120,21 @@
     <routinesParameter id="_-wAPUK1DEemCs_mbRnFAKA" name="TalendStringUtil"/>
     <routinesParameter id="_-v8k8K1DEemCs_mbRnFAKA" name="TalendString"/>
   </parameters>
-  <node componentName="tLibraryLoad" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="64">
+  <node componentName="tLibraryLoad" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="-32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLibraryLoad_1"/>
     <elementParameter field="MODULE_LIST" name="LIBRARY" value="&quot;LoginUtilxx.jar&quot;"/>
     <elementParameter field="TABLE" name="HOTLIBS"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;&#10;import com.huawei.bigdata.security.LoginUtil;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="64">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="&#10;org.apache.hadoop.conf.Configuration conf = new org.apache.hadoop.conf.Configuration();&#10;System.out.println(&quot;1111&quot;);&#10;System.setProperty(&quot;java.security.krb5.conf&quot;,  context.path + &quot;krb5.conf&quot;);&#10;conf.set(&quot;hadoop.security.authentication&quot;, &quot;Kerberos&quot;);&#10;System.out.println(&quot;2222&quot;);&#10;//org.apache.hadoop.hbase.security.UserGroupInformation.setConfiguration(conf);&#10;&#10;conf.addResource(new org.apache.hadoop.fs.Path(context.path + &quot;core-site.xml&quot;));&#10;conf.addResource(new org.apache.hadoop.fs.Path(context.path + &quot;hdfs-site.xml&quot;));&#10;conf.addResource(new org.apache.hadoop.fs.Path(context.path + &quot;hbase-site.xml&quot;));&#10;System.out.println(&quot;3333&quot;);&#10;//javax.security.auth.login.Configuration.setConfiguration(configuration);&#10;//javax.security.auth.login.Configuration config_ja = javax.security.auth.login.Configuration.;       &#10;  &#10;&#10;System.out.println(&quot;4444&quot;);&#10;System.setProperty(&quot;java.security.auth.login.config&quot;,context.path + &quot;jaas.conf&quot; );  &#10;//javax.security.auth.login.Configuration.&#10;System.out.println(&quot;5555&quot;);&#10;LoginUtil.setJaasConf(&quot;developuser&quot;, &quot;developuser&quot;, &quot;c:\\tmp\\krb5.conf&quot; ); //+++&#10;&#10;System.out.println(&quot;6666&quot;);&#10;LoginUtil.setZookeeperServerPrincipal(&quot;zookeeper.server.principal&quot;,&quot;zookeeper/hadoop.hadoop.com&quot;);&#10;System.out.println(&quot;7777&quot;);&#10;&#10;LoginUtil.login(&quot;developuser&quot;, context.path + &quot;user.keytab&quot;, context.path + &quot;krb5.conf&quot;, conf);&#10;System.out.println(&quot;8888&quot;);&#10;globalMap.put(&quot;conn_tHiveConnection_1&quot;,conf);&#10;System.out.println(&quot;9999&quot;);&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
   </node>
-  <node componentName="tHiveConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="64">
+  <node componentName="tHiveConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="-32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHiveConnection_1"/>
     <elementParameter field="HADOOP_LIBRARIES" name="HIVE" show="false" value=""/>
     <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="CUSTOM"/>
@@ -434,13 +434,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d76abdd1-8ee3-4a9c-bd36-9da5e636068c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hRMLzesGjzoOQkTTv2XNWh6qKxlMwsp0gl4SKUEC8c50TFd+pMsSuCD5iu11JHnsQ0xB7TqbslZ/
-mAYzA3jiBg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_983c8aa8-da34-4f42-956d-dd6c82633b0c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mgZfRWco3yUXwGXvzaxqu9nZmBGcmYbAvgpneUDwvoPeuv5Ir1XbXNwksBtF2pCIQ+yo6wvFqoky
-Dx+tMB3uFQ==</DigestValue></Reference></SignedInfo><SignatureValue>lSb9kpOz74y+atV6er+KhCwL0UabrUjasof4ClAXDRW6JPi6fGTTedS4+2f4T7Y8iploJgozCiZe
-NPgdIipxfzPh3QarXSokcfHt4fmSdXeqAoUYmyHfMwi5qFT8K/XiWOylrwiHvZ5cHpvye1E/HGf5
-e4kzeuQHfuC34FLZiEx8jKqUtCd660MmNeuUEIosPY6P/Cm/e3O63m5MujmEhTKkmhZNt43wNQJB
-c7vBRSYq2k2dnSQwI2oVOGNGd0fEZdXzjJirwui08Q1wUTy45DxmIT/ocYFyi3VuueSzqodGYBb9
-OrGF/sLZCNrTk11muiLb5ivOmeszozWoXx1JdQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3b9e3591-97a2-4b56-8825-2a3e4e45858f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Wx3wedhZGY56cuaewIuNqKHdpuluIjAGQOfFMhUjFdEYDRunAjIezrO+XSeNPdvyPxQwvgKtC2Fk
+g3pMnNLnNQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4e14dab8-4e00-43b2-877e-0d2bcb962569"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>WTiPCsubk9ohh/od4ktABRKvxJ9JRfd0iI5rQv831rL4wGg2SSrRAF7Ai+EnZD29Dwyk8907gJO6
+cA2ZhMqCyw==</DigestValue></Reference></SignedInfo><SignatureValue>RtQF6qULJO34MSEQMtTWZf03jSYC/l77LnaNoBz6g+B9vN+ZBh7oC5UV7ZnW6XAcGpLMU/n9DseW
+JDB5TTJFr4ffQba1dDOY1eIt5Jfke4TVfcd0cTiYT+jEAZR4hRZ9h6ZdfyqNKQys0V/iHI8XfdD5
+70D2rfqhzD2Ja4WuOOq54+oBovuPpHx6VMDvCZ3XBffsy0+HihO8xvZvCP1raZwVTRcPvBqYNHqa
+SzRLWyxq1m6kLZgbLIRlulIq25IuNRvJuPf6hbWeoS80oPE/7CV7T7a2MeZiOdAziGD+1FAoKKps
+UTp6jNTYnJ5yA2Pvehrxkyo2WhLW0s5qHIoJkQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -462,4 +462,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_983c8aa8-da34-4f42-956d-dd6c82633b0c" Target="#_d76abdd1-8ee3-4a9c-bd36-9da5e636068c"><Timestamp>2019-07-26 07:19:20</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4e14dab8-4e00-43b2-877e-0d2bcb962569" Target="#_3b9e3591-97a2-4b56-8825-2a3e4e45858f"><Timestamp>2019-07-26 07:23:52</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
