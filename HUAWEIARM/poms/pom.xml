@@ -18,6 +18,7 @@
     <module>jobs/process/HIVE/hive_connect_bak_0.1</module>
     <module>jobs/process/HIVE/hive_jar_0.1</module>
     <module>jobs/process/HDFS/hdfs_test_0.1</module>
+    <module>jobs/process/HDFS/hdfs_test_fi_0.1</module>
   </modules>
   <properties>
     <signer.version>7.2.1</signer.version>
