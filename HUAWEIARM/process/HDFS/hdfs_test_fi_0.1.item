@@ -122,38 +122,52 @@
   </parameters>
   <node componentName="tHDFSConnection" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="0">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHDFSConnection_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_AeuyQLcZEem6v8UAi-ifxg"/>
     <elementParameter field="HADOOP_LIBRARIES" name="HDFS" show="false" value=""/>
     <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="CUSTOM"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="EMR_5_15_0"/>
     <elementParameter field="HADOOP_DISTRIBUTION" name="HDFS" value=""/>
-    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" value="woodstox-core-5.0.3.jar;commons-cli-1.2.jar;zookeeper-file-storage-0.0.1.jar;re2j-1.1.jar;commons-codec-1.11.jar;hadoop-auth-3.1.1.jar;hadoop-hdfs-httpfs-3.1.1.jar;jackson-core-asl-1.9.13.jar;jackson-databind-2.9.8.jar;hadoop-hdfs-datamovement-3.1.1.jar;hadoop-common-3.1.1.jar;jackson-annotations-2.9.8.jar;commons-configuration2-2.1.1.jar;htrace-core4-4.1.0-incubating.jar;slf4j-log4j12-1.7.25.jar;smallfs-main-V100R002C30.jar;hadoop-hdfs-nfs-3.1.1.jar;jackson-core-2.9.8.jar;slf4j-api-1.7.25.jar;protobuf-java-2.5.0.jar;log4j-1.2.17.jar;guava-11.0.2.jar;stax2-api-3.1.4.jar;commons-io-2.5.jar;commons-lang-2.6.jar;hadoop-hdfs-rbf-3.1.1.jar;commons-collections-3.2.2.jar;hadoop-hdfs-client-3.1.1.jar;zookeeper-3.5.1.jar;hadoop-mapreduce-client-core-3.1.1.jar;smallfs-common-V100R002C30.jar;commons-logging-1.1.3.jar;hadoop-plugins-1.0.jar;hadoop-annotations-3.1.1.jar;hadoop-nfs-3.1.1.jar;hadoop-hdfs-native-client-3.1.1.jar;hadoop-hdfs-3.1.1.jar"/>
+    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" value="commons-net-3.6.jar;jetty-security-9.3.24.v20180605.jar;paranamer-2.3.jar;re2j-1.1.jar;kerb-crypto-1.0.1.jar;hadoop-auth-3.1.1.jar;jsch-0.1.54.jar;jackson-databind-2.9.8.jar;hadoop-hdfs-datamovement-3.1.1.jar;jersey-core-1.19.jar;javax.servlet-api-3.1.0.jar;slf4j-log4j12-1.7.25.jar;jetty-server-9.3.24.v20180605.jar;hadoop-hdfs-nfs-3.1.1.jar;kerb-client-1.0.1.jar;crypter-0.0.6.jar;snappy-java-1.0.5.jar;kerb-util-1.0.1.jar;jaxb-impl-2.2.3-1.jar;jetty-webapp-9.3.24.v20180605.jar;hadoop-hdfs-rbf-3.1.1.jar;commons-collections-3.2.2.jar;commons-lang3-3.4.jar;hadoop-annotations-3.1.1.jar;kerby-pkix-1.0.1.jar;kerb-admin-1.0.1.jar;opensaml-2.6.5.jar;woodstox-core-5.0.3.jar;jsr305-3.0.0.jar;kerby-config-1.0.1.jar;kerb-server-1.0.1.jar;commons-codec-1.11.jar;apache-log4j-extras-1.1.jar;jsp-api-2.1.jar;htrace-core4-4.1.0-incubating.jar;asm-5.0.4.jar;kerby-asn1-1.0.1.jar;guava-11.0.2.jar;jackson-mapper-asl-1.9.13.jar;commons-io-2.5.jar;commons-lang-2.6.jar;hadoop-hdfs-client-3.1.1.jar;jsr311-api-1.1.1.jar;kerb-identity-1.0.1.jar;commons-logging-1.1.3.jar;xz-1.0.jar;SSO-1.0.0.jar;commons-math3-3.1.1.jar;gsjdbc4-V100R003C10SPC117.jar;jettison-1.1.jar;xmlsec-1.5.7.jar;jetty-io-9.3.24.v20180605.jar;jersey-json-1.19.jar;commons-compress-1.4.1.jar;httpclient-4.5.2.jar;jetty-servlet-9.3.24.v20180605.jar;token-provider-1.0.1.jar;curator-framework-2.12.0.jar;nimbus-jose-jwt-4.41.1.jar;jackson-core-asl-1.9.13.jar;curator-client-2.12.0.jar;jackson-annotations-2.9.8.jar;slf4j-api-1.7.25.jar;protobuf-java-2.5.0.jar;hadoop-kms-3.1.1.jar;kerb-simplekdc-1.0.1.jar;jetty-xml-9.3.24.v20180605.jar;zookeeper-3.5.1.jar;kerb-common-1.0.1.jar;jna-4.4.0.jar;hadoop-hdfs-native-client-3.1.1.jar;hadoop-nfs-3.1.1.jar;kerby-xdr-1.0.1.jar;hadoop-hdfs-3.1.1.jar;commons-cli-1.2.jar;accessors-smart-1.2.jar;jersey-servlet-1.19.jar;netty-3.10.5.Final.jar;hadoop-hdfs-httpfs-3.1.1.jar;hadoop-common-3.1.1.jar;curator-recipes-2.12.0.jar;commons-configuration2-2.1.1.jar;jcip-annotations-1.0-1.jar;jul-to-slf4j-1.7.25.jar;cas-client-core-hw-3.3.3.jar;jetty-util-9.3.24.v20180605.jar;jackson-core-2.9.8.jar;log4j-1.2.17.jar;jaxb-api-2.2.11.jar;stax2-api-3.1.4.jar;kerby-util-1.0.1.jar;jackson-jaxrs-1.9.13.jar;avro-1.7.7.jar;wc2frm-v1r2c60-20160429.jar;commons-beanutils-1.9.3.jar;jackson-xc-1.9.13.jar;gson-2.2.4.jar;kerb-core-1.0.1.jar;jetty-http-9.3.24.v20180605.jar;metrics-core-3.2.4.jar;hadoop-plugins-1.0.jar;json-smart-2.3.jar;httpcore-4.4.4.jar;jersey-server-1.19.jar"/>
     <elementParameter field="CLOSED_LIST" name="SCHEME" value="HDFS"/>
     <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MODE" value="KRB"/>
-    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" value="&quot;hdfs://10.100.1.3:25000/&quot;"/>
+    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" value="&quot;hdfs://hacluster&quot;"/>
     <elementParameter field="CHECK" name="CONFIGURATIONS_FROM_CLASSPATH" value="false"/>
     <elementParameter field="CHECK" name="USE_KRB" value="true"/>
     <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" value="&quot;hdfs/hadoop.hadoop.com@HADOOP.COM&quot;"/>
     <elementParameter field="CHECK" name="USE_KEYTAB" value="true"/>
     <elementParameter field="TEXT" name="PRINCIPAL" value="&quot;developuser&quot;"/>
-    <elementParameter field="FILE" name="KEYTAB_PATH" value="&quot;C:/tmp/user.keytab&quot;"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" value="&quot;C:/developuser/user.keytab&quot;"/>
     <elementParameter field="CHECK" name="USE_MAPRTICKET" value="false"/>
     <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;anonymous&quot;"/>
     <elementParameter field="TEXT" name="GROUP" show="false" value="&quot;supergroup&quot;"/>
     <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" show="false" value="0RMsyjmybrE="/>
     <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" show="false" value="&quot;demo.mapr.com&quot;"/>
-    <elementParameter field="TEXT" name="MAPRTICKET_DURATION" show="false" value="86400L"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_DURATION" show="false" value=""/>
     <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES">
+      <elementValue elementRef="PROPERTY" value="&quot;hadoop.security.authentication&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;Kerberos&quot;"/>
+      <elementValue elementRef="BUILDIN" value=""/>
       <elementValue elementRef="PROPERTY" value="&quot;hadoop.rpc.protection&quot;"/>
       <elementValue elementRef="VALUE" value="&quot;privacy&quot;"/>
-      <elementValue elementRef="BUILDIN" value="TRUE"/>
-      <elementValue elementRef="PROPERTY" value="&quot;hadoop.security.authentication&quot;"/>
-      <elementValue elementRef="VALUE" value="&quot;kerberos&quot;"/>
-      <elementValue elementRef="BUILDIN" value="TRUE"/>
-      <elementValue elementRef="PROPERTY" value="&quot;hadoop.security.authorization&quot;"/>
-      <elementValue elementRef="VALUE" value="&quot;true&quot;"/>
-      <elementValue elementRef="BUILDIN" value="TRUE"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;dfs.namenode.rpc-address.hacluster.14&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;10-100-1-3:25000&quot;"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;dfs.namenode.rpc-address.hacluster.15&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;10-100-1-4:25000&quot;"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;dfs.ha.namenodes.hacluster&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;14,15&quot;"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;dfs.nameservices&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;hacluster&quot;"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;dfs.client.failover.proxy.provider.hacluster&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;dfs.client.failover.proxy.provider.hacluste&quot;"/>
+      <elementValue elementRef="BUILDIN" value=""/>
     </elementParameter>
-    <elementParameter field="CHECK" name="USE_DATANODE_HOSTNAME" value="false"/>
+    <elementParameter field="CHECK" name="USE_DATANODE_HOSTNAME" value="true"/>
     <elementParameter field="CHECK" name="USE_HDFS_ENCRYPTION" show="false" value="false"/>
     <elementParameter field="TEXT" name="HDFS_ENCRYPTION_KEY_PROVIDER" show="false" value="&quot;kms://http@localhost:16000/kms&quot;"/>
     <elementParameter field="TEXT" name="ADLS_FS_DEFAULT_NAME" show="false" value="&quot;adl://account.azuredatalakestore.net&quot;"/>
@@ -392,13 +406,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b41810ac-f455-43e6-b255-1b08ab843a76"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>KZnoQZQe2cY2LCY0Fhebr93jpin7//ZkjOJ/rthsxHxXgZ09PwNPBc/m9TSGS0NdYVjlZeT44ZN3
-2ffzylc9Bw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_975d1507-a93f-400f-a088-ca69bd168fae"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Ka0Orf9a5q/+OOwj3flxl0I335hIickCPrmQT2fU1uDx1zdKN7G2Ng/5M5dmZXdnhSiMbiPhCwBE
-kL5kNyO9qQ==</DigestValue></Reference></SignedInfo><SignatureValue>UnLpOLZOa+uol1aTHu/YXhlGhSZoZtX3v21K6iDgBOe6WvgnNkDqrObJmxR3g0Lt4Jmh/GkWtl9/
-1b1DN4YUQbTKVQSFQud2MuWWcE+meGA01B+1TZdIQwIG81SeQkmbR9Cfkiuf4oMU9HUsk0fJps5L
-LBMWJt0zPrDI56O6U1+6ePNT6fJvvFPM22u5bCJIDbb0ZhFTVPLOUgXZzKl8D+8DYABz4dQjxHRr
-boeONDdO8f2DQ2forhQOGxreuHmdbYytV9rhk4HCxnU8MeIf+meJeKaA5SiVMcT5j8Q054754HOA
-DAr8PZ1AMeGWA/AJ700jZrdSkR3Dudr30vPtRQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_38413621-6898-490c-b082-7eca8b1f9295"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0dRaZVg3PJ/U4lpkR8l3yoZ1D4L7Dl6DePsC+kZnVUdsu4MCEMPRFETOo5LyN1UeuZdM4TQ0zZqI
+gP/6vhBqMQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1d2e0265-c3fa-4078-b8ea-4f393efc22e2"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Ef2r3H7qcwhyNd1sCAeVOvdJAKmrTctj3jFOzk2NC1x2s7SonmP4KggWyaky/4wSMxNxIhCG18aw
+hWdwRQBJqg==</DigestValue></Reference></SignedInfo><SignatureValue>PPxWBhboq7aQPunSK1rKMB7ke7Pgt8GZZUHWbf6rSK0OvqivjFYv34cTGd0iXLH01qErrNOxuxOR
+4bpvVSlAr+rbFW7wBT2DSrYiLFktoSI2Iht3o6PKPjGwLxF0Vgjqbp5bS1HxSPbmxY33OtXZkKsR
+llApzUbU4LunUfaTJpysya0IowiwHEJWF6lIoewBvGdDzxuY1/7U6ezQv9H2PFA6SoTyD6LWJcKj
+vy+VCPqGQH1O7F6KKJbD6iQF+Qi+IxGpm9vh+LgHgrm4mehQekbnoVUELrQQzaXzr2YijLBIO2tj
+wsiYxHzhO2s9gkCusLqRATJCihAxa+tCj+7gmw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -420,4 +434,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_975d1507-a93f-400f-a088-ca69bd168fae" Target="#_b41810ac-f455-43e6-b255-1b08ab843a76"><Timestamp>2019-08-04 16:07:10</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1d2e0265-c3fa-4078-b8ea-4f393efc22e2" Target="#_38413621-6898-490c-b082-7eca8b1f9295"><Timestamp>2019-08-05 01:21:54</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
