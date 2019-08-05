@@ -123,7 +123,7 @@
   <node componentName="tHDFSConnection" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="0">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHDFSConnection_1"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_o6GJoLcgEemlN7ySHaJWzg"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_AeuyQLcZEem6v8UAi-ifxg"/>
     <elementParameter field="HADOOP_LIBRARIES" name="HDFS" show="false" value=""/>
     <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="CUSTOM"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="EMR_5_15_0"/>
@@ -162,6 +162,9 @@
       <elementValue elementRef="BUILDIN" value=""/>
       <elementValue elementRef="PROPERTY" value="&quot;dfs.nameservices&quot;"/>
       <elementValue elementRef="VALUE" value="&quot;hacluster&quot;"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;dfs.client.failover.proxy.provider.hacluster&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;org.apache.hadoop.hdfs.server.namenode.ha.AdaptiveFailoverProxyProvider&quot;"/>
       <elementValue elementRef="BUILDIN" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="USE_DATANODE_HOSTNAME" value="true"/>
@@ -403,13 +406,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_facdb3a1-9674-4d60-a33a-9729df7201a2"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>dgfmeM7S4RL01iX+NMlwPJ9pJMGoQF3ccABAtidKQHjh6V0gZZh8dO+mbNrXm2udKj0x4dQWKlEV
-gSmJx43m3A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_dba68a8e-c898-4eec-b5f7-17db88236583"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gFBvzKar0qjXls0hq9RhYzlLS97MUa3w7hPMu0tVuH1mYHnwU0GvzTQD4BMqssIHBHApWlWPTmlF
-xVpNvYRIQg==</DigestValue></Reference></SignedInfo><SignatureValue>eIuVmBM0D89nm2Mt0bvO2TyO4aKB2cDvLjclyJ92tii4GcLODIqHGBhv0xbJ7DRePl2J0H3Q2V4b
-21rHUAsFClngC4SL3sTIXoNpwkLtk7qJFSKa92QlQD8h/VUgCaEAJ8kCGLDPORy2/IbBpWHlLQ22
-dfrC08eny73YqwUlQqfhTsrR9KMgw480AkuwAn6c7nGGp50E4Odc2k4lrTosPJupHJJDcOPQASt4
-rFpguyDpRn8h7I+rs79SYTBT7h/TnYDLGOkRKFW0MCkaByYnLAH2mJZ/0N4eGifxdXJhYG1qIvlj
-MO1gDjjr9CnzKctumc7wd8dVLFci56nQ/+m8AA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_55baa5e6-3efe-43d9-846a-5c72fc955e8b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>uPOR+W80tjb0bwvRGoZU1xeVPEyGTsbunRYZvD8TtKK1HBw4J0NWj4EJCG2oYQGvOkSurn006+kH
+o5gDW4C8Yw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0bf50d28-4194-4c99-a9b9-cee3395c56bf"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>g2AcMHlxFLFB4mwcMxTnkY6Hq3V8vfoMkVH6fskaTW8eBX5PLmB/79Mf+d16vByOFnEHykrHkTG+
+STsW+SE+fg==</DigestValue></Reference></SignedInfo><SignatureValue>QBEgLbKrIx9xNrlBDCKl/eEaGiwJJ1G5KMcMMhceVpmFX3vREUFcQTu1N/XVDWWfkFSF33T4Ehn0
+RmJwsXKcEpaZWXzgSMsw0yGz3EbrbNprJHAeeS08l+kM/3tN/NLIYmSji6WY0GxfZRkpEccZb8cC
+SjNG/S6J/4Vt4XXmWNGu0iX45kMkg1Mr+620Y5jXlLz/fnfmKm0Nd80YFaUFg/9DEUlR1Pn17Fy2
+YrdKe3ZSzgef/r/hpUtQPqrfO29PhE1Zb+ZPVnW2ktwXCpFMVqU9h5YgV2TGorVYjPtRNX14QFDS
+d6MWTIyalq7ywcadqAp4gL3sy17CM4QeMHgICg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -431,4 +434,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_dba68a8e-c898-4eec-b5f7-17db88236583" Target="#_facdb3a1-9674-4d60-a33a-9729df7201a2"><Timestamp>2019-08-05 01:31:22</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0bf50d28-4194-4c99-a9b9-cee3395c56bf" Target="#_55baa5e6-3efe-43d9-846a-5c72fc955e8b"><Timestamp>2019-08-05 01:37:52</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
