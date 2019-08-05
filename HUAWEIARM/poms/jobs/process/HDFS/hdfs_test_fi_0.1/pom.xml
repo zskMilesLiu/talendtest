@@ -30,7 +30,7 @@
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
     <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
     <talend.job.stat>true</talend.job.stat>
-    <talend.job.context>DEV</talend.job.context>
+    <talend.job.context>QA</talend.job.context>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
     <talend.job.name>hdfs_test_fi</talend.job.name>
@@ -215,11 +215,6 @@
     <dependency>
       <groupId>org.talend.libraries</groupId>
       <artifactId>hadoop-common-3.1.1</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>hadoop-conf-FusionInsight651</artifactId>
       <version>6.0.0-SNAPSHOT</version>
     </dependency>
     <dependency>
